@@ -21,9 +21,17 @@ Training the sequence data against the phenotypes:
 
 python ml_sequence_training.py --optimizer=Adam --batch_size=100 --learning_rate=0.00001 --kl_weight=1.0 --model_dir=model --train_number=100 --test_number=35 --train_epochs=1000 --trainfile=train.seq.csv --testfile=test.seq.csv
 
-Prediction of the phenotypes using a trained model:
+Prediction of the phenotypes from amino acid sequence using a trained model:
 
 python ml_sequence_prediction.py --model_dir=model --test_number=589 --input_weights=weights.sequence.best.hdf5 --testfile=prop.seq.all.csv --output_prd_test=prd.all.dat
+
+Prediction of the phenotypes from fitness scores using a trained model:
+
+python ml_fitness_prediction.py --model_dir=model --input_dim=63 --testfile=fitness.csv --input_weights=weights.fitness.prediction.h5 --output_prd=prd_phenotype.dat
+
+Calculation of latent space coordinates from fitness scores using a trained variational autoencoder model:
+
+python ml_fitness_vae.py --model_dir=model --sample_number=589 --input_dim=63 --testfile=fitness.csv --input_weights=weights.fitness.vae.h5 --output_latent=latent.fitness.dat
 
 *** Citation
 
