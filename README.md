@@ -29,13 +29,17 @@ Prediction of the phenotypes from fitness scores using a trained model:
 
 python ml_fitness_prediction.py --model_dir=model --input_dim=63 --testfile=fitness.csv --input_weights=weights.fitness.prediction.h5 --output_prd=prd_phenotype.dat
 
-Calculation of latent space coordinates from fitness scores using a trained variational autoencoder model:
+Calculation of latent space coordinates from fitness scores using the trained variational autoencoder model:
 
 python ml_fitness_vae.py --model_dir=model --sample_number=589 --input_dim=63 --testfile=fitness.csv --input_weights=weights.fitness.vae.h5 --output_latent=latent.fitness.dat
 
 Training a variational autoencoder model using MD simulation data as the input:
 
 python ml_md_vae_training.py --optimizer=Adam --learning_rate=0.0001 --model_dir=model --sample_number=135 --input_dim=62 --train_epochs=500 --trainfile=prop.md.csv
+
+Calculation of latent space coordinates from MD simulation data using the trained variational autoencoder model:
+
+python ml_md_vae_trained.py --model_dir=model --sample_number=135 --input_dim=62 --testfile=prop.md.csv --input_weights=weights.md.vae.h5 --output_latent=latent.md.dat
 
 *** Citation
 
