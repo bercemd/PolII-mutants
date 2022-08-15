@@ -13,7 +13,7 @@ Sklearn version 0.24.2
 
 *** Usage
 
-Python [options] filename.py
+  Python [options] filename.py
 
 *** Examples:
 
@@ -43,4 +43,4 @@ python ml_md_vae_trained.py --model_dir=model --sample_number=135 --input_dim=62
 
 *** Citation
 
-Bercem Dutagaci, Bingbing Duan, Chenxi Qiu, Craig D. Kaplan, Michael Feig, Characterization of RNA Polymerase II Trigger Loop Mutations using Molecular Dynamics Simulations and Machine Learning, 2022
+Bercem Dutagaci, Bingbing Duan, Chenxi Qiu, Craig D. Kaplan, Michael Feig, Characterization of RNA Polymerase II Trigger Loop Mutations using Molecular Dynamics Simulations and Machine Learning, 2022, bioRxiv, doi: https://doi.org/10.1101/2022.08.11.503690 
