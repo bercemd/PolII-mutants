@@ -43,5 +43,5 @@ python ml_md_vae_trained.py --model_dir=model --sample_number=135 --input_dim=62
 ```
 *** Citation
 ```
-Bercem Dutagaci, Bingbing Duan, Chenxi Qiu, Craig D. Kaplan, Michael Feig, Characterization of RNA Polymerase II Trigger Loop Mutations using Molecular Dynamics Simulations and Machine Learning, 2022, bioRxiv, doi: https://doi.org/10.1101/2022.08.11.503690 
+Bercem Dutagaci, Bingbing Duan, Chenxi Qiu, Craig D. Kaplan, Michael Feig, Characterization of RNA Polymerase II Trigger Loop Mutations using Molecular Dynamics Simulations and Machine Learning, PLoS Comput Biol 2023, 19(3): e1010999, https://doi.org/10.1371/journal.pcbi.1010999. 
 ```
